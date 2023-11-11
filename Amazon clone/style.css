@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  border: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navlogo {
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+img:hover {
+  border: 1.5px solid white;
+}
+
+.Rambo {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.Rambo:hover {
+  border: 1.5px solid white;
+}
+
+.navadd {
+  height: 50px;
+}
+
+.addfirst-icon {
+  cursor: pointer;
+  color: #cccccc;
+  font-size: 13px;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+
+.addsecond-icon {
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.addicon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search {
+  display: flex;
+  height: 40px;
+  width: 580px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-align: center;
+  background-color: #ff8484;
+  margin-left: 15px;
+  border-radius: 4px;
+  justify-content: space-evenly;
+}
+
+.search-option1 {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  border: transparent;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+.search-input {
+  border: none;
+  padding-left: 15px;
+}
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 156, 4, 0.849);
+  font-size: 1.2rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+  cursor: pointer;
+}
+
+.lanoption {
+  font-weight: bolder;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.languageoption {
+  height: 50px;
+  width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languageoption:hover {
+  border: 1.5px solid white;
+}
+
+.sign:hover {
+  border: 1.5px solid white;
+}
+
+.hello {
+  font-size: 13px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.account-sign {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.box6:hover {
+  border: 1.5px solid white;
+}
+
+.return {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.order {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 9px;
+}
+
+.cart:hover {
+  border: 1.5px solid white;
+}
+
+.nav-search:hover {
+  border: 2px solid orange;
+}
+
+/* Second-Nav */
+
+.second-nav {
+  height: 45px;
+  background-color: #222f3d;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.second-nav p {
+  display: inline;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  /* padding: 16px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.panel-ops {
+  height: 40px;
+  width: 60%;
+  font-size: 1rem;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ptag {
+  /* padding: 5px !important; */
+  margin-right: 7px;
+}
+
+.ptag:hover {
+  border: 1.5px solid white;
+}
+
+.deals {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.deals:hover {
+  border: 1.5px solid white;
+}
+
+/* items-section */
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e2e7e6;
+  width: 100%;
+}
+
+.box {
+  height: 450px;
+  width: 23%;
+  background-color: white;
+  padding: 15px;
+  margin: 8px;
+}
+
+.shop1 {
+  font-size: 16px;
+}
+
+.box1-img {
+  height: 300px;
+  background-size: cover;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
+}
+
+.box1-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.shop1 p a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 7px;
+}
+
+.firstpanel {
+  height: 50px;
+  background-color: #232f3e;
+  color: white;
+  font: 13px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border-top: 8px solid gold;
+}
+
+.secondpanel {
+  background-color: #333;
+  color: white;
+  height: 335px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondpanel > ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.secondpanel > ul p {
+  display: block;
+  font-size: 16px;
+  /* margin-top: 15px; */
+  color: #dddddd;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.thirdpanel {
+  background-color: #333;
+  color: white;
+  border-top: 2px solid #848688;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-op {
+  margin-left: 20px;
+  display: flex;
+  gap: 6px;
+}
+
+.select-op select {
+  background: transparent;
+  color: #cccccc;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: 5px;
+  border: 1px solid #848688;
+  padding: 6px 18px 6px 8px;
+  border-radius: 3px;
+}
+
+.panel4 {
+  background-color: #333;
+  color: white;
+  height: 80px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.page {
+  text-align: center;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+}
+.page a {
+  text-decoration: none;
+  color: white;
+  margin: 6px;
+  font-size: medium;
+}
+
+.copyright {
+  margin-top: 4px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  padding: 5px 0px;
+}
+
+/* media queries */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}

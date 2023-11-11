@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Harry.com</title>
+</head>
+
+<body>
+    <H1>Registration form</H1>
+    <form>
+        <div>
+            <label for="Username">Full name</label>
+            <input type="text" id="Username" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <label for="Email Id">Email Id</label>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="date">DOB</label>
+            <input type="date" id="date" placeholder="Enter">
+        </div>
+
+        <div>
+            <label for="Gender">Gender</label>
+            <div>
+                <input type="radio" name="Gender" id="male">
+                <label for="male"> Male</label>
+            </div>
+
+            <div>
+                <input type="radio" name="Gender" id="Female">
+                <label for="Female">female</label>
+            </div>
+
+            <div>
+                <input type="radio" name="Gender" id="other">
+                <label for="other">other</label>
+            </div>
+
+            <div>
+                <label for="">Mobile</label>
+                <input type="number">
+            </div>
+
+            <div>
+                <label for="">Address</label>
+                <textarea name="Address" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="">city</label>
+                <select>
+                    <option value="">---select city---</option>
+                    <option value="Jammu">Jammu</option>
+                    <option value="punjab">punjab</option>
+                    <option value="Himachal">Himachal</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Search city</label>
+                <input type="text" list="city" placeholder="---select city---" />
+                <datalist id="city">
+                    <option value="">---select city---</option>
+                    <option value="Jammu">Jammu</option>
+                    <option value="punjab">punjab</option>
+                    <option value="Himachal">Himachal</option>
+                    <option value="Delhi">Delhi</option>
+            </div>
+
+            <div>
+                <input type="checkbox">
+                <label for="">City I Agree for Registration</label>
+            </div>
+
+            <div>
+                <input type="file" multiple />
+            </div>
+
+            <div>
+                <button>submit</button>
+            </div>
+    </form>
+</body>
+
+</html>
